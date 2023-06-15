@@ -67,3 +67,49 @@ Used to manipulate individual data items and return a result.
 - [jQuery Official Website](https://jquery.com/)
 - [React official Website](https://reactjs.org/)
 - [Emojis](http://unicode.org/emoji/charts/full-emoji-list.html#1f600)
+
+## Conditionals
+Handling multiple if and else staments.
+
+### ELSE IF and SWITCH staments
+```js
+// Handling with else if
+var place = "first"
+
+if(place == "first"){
+    console.log("Gold")
+    }
+else if (place == "second"){
+   console.log("Silver")
+   }
+else if (place == "third"){
+   console.log("Bronze")
+   }
+else {
+    console.log("No medal")
+    
+// Handling with switch statement
+
+switch(place) {
+    case "first":
+        console.log("Gold")
+        break
+        
+    case "second":
+        console.log("Silver")
+        break
+        
+    case "third":
+        console.log("Bronze")
+        break
+        
+    default:
+        console.log("No medal")
+ }
+
+```
+
+### So what to use
+Both if else and switch are used to determine the program execution flow based on whether or not some conditions have been met. There are referred to as **flow control statements**
+- `if else`: is better suited if there is a binary choice in the condition.
+- `switch`: If there are a lot of possible outcomes, it is best practice to use a switch statement because it is easier less verbose. 
