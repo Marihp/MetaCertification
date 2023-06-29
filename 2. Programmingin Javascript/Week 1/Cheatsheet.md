@@ -112,4 +112,35 @@ switch(place) {
 ### So what to use
 Both if else and switch are used to determine the program execution flow based on whether or not some conditions have been met. There are referred to as **flow control statements**
 - `if else`: is better suited if there is a binary choice in the condition.
-- `switch`: If there are a lot of possible outcomes, it is best practice to use a switch statement because it is easier less verbose. 
+- `switch`: If there are a lot of possible outcomes, it is best practice to use a switch statement because it is easier less verbose.
+
+## Functions
+For repetitive tasks
+```js
+function nameFunction(arg_1, arg_2) {
+// Function body
+// Here goes the code
+}
+```
+
+## Arrays
+It´s like a train, remember that the indices begin in 0.
+- Array Literal Syntax `[]`
+- `["item 0", "item 1"]`
+- Values in an array are all part of a group
+- Values are set in a specific sequence
+- Values can be accessde with their index
+
+## Objects
+It's the easiest way to operate "roles" in Javascript, objects can be described as collections of related properties where each property is represented as a key value pair. 
+```js
+// Declare the object
+var object = {
+atribute_1: 10,
+atribute_2: 23,
+}
+
+// Add new property
+object.atr_3  = "Hello";
+```
+Cuando creo el objeto puedo seguir actualizandolo y añadiendo campos
