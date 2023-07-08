@@ -212,3 +212,43 @@ function sayHi() {
 let element = document.querySelector("#city");
 element.addEventListener("click", sayHi);
 ```
+
+### HTML content
+Update the HTML content of the selected element.
+```js
+let li = document.querySelector("li")
+li.innerHTML = "Hello World";
+```
+
+## Refactoring
+Make the code more readable and code quality
+
+### String concatenation
+```js
+let firstName = "Julie";
+let lastName = "Johnson";
+let fullName = firstName + " " + lastName; // "Julie Johnson"
+
+// Better 
+let fullName = `${firstName} ${lastName}`;
+```
+
+### Template literals
+```js
+let city = "Denver";
+let sentence = `Kate is from ${city}`; // Kate is from Denver
+```
+
+### JS Function Parameters
+```js
+function fullName(firstName, lastName) {
+  alert(firstName + " " + lastName);
+}
+
+let firstName = prompt("What's your first name?");
+let lastName = prompt("What's your last name?");
+fullName(firstName, lastName);
+fullName("Kate", "Robinson");
+``
+
+
