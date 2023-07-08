@@ -9,6 +9,43 @@ var varName = "value"
 console.log("Hello", varName)
 ```
 
+### Diferencias
+- `var`: global scope out of a function or local scope in a function, can be overwrite
+```js
+// El problema con var
+var saludar = "hey, hola";
+    var tiempos = 4;
+
+    if (tiempos > 3) {
+        var saludar = "dice Hola tambien"; 
+    }
+    
+    console.log(saludar) // "dice Hola tambien"
+```
+- `let`: Se debe preferir por encima de var, pues tiene ámbito de bloque y soluciona el problema anterior.Todo lo que esté dentro de llaves es un bloque, adicional let puede modificarse pero *no* volver a declararse
+```js
+   let saludar = "dice Hola";
+   let tiempos = 4;
+
+   if (tiempos > 3) {
+        let hola = "dice Hola tambien";
+        console.log(hola);// "dice Hola tambien"
+    }
+   console.log(hola) // hola is not defined
+
+   let saludar = "dice Hola tambien"; // error: Identifier 'saludar' has already been declared
+   saludar = "dice hola tambien" // Ok
+
+  // En bloque (ámbitos no hay problema)
+  let saludar = "dice Hola";
+    if (true) {
+        let saludar = "dice Hola tambien";
+        console.log(saludar); // "dice Hola tambien"
+    }
+    console.log(saludar); // "dice Hola"
+```
+- `const`: Similar to let pero no puede modificarse ni volver a declararse.
+
 ## Data types
 There are seven primitive data types in Javascript: String, Number, Boolean, Null, Undefined, BigInt and Symbol.
 
