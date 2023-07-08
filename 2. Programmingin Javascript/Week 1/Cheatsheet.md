@@ -1,4 +1,5 @@
 # Javascript concepts
+From Meta course, sheCodes bootcamp and internet searchs.
 
 ## Variables
 - **Key word**: var
@@ -181,3 +182,33 @@ atribute_2: 23,
 object.atr_3  = "Hello";
 ```
 Cuando creo el objeto puedo seguir actualizandolo y añadiendo campos
+
+## Selectors
+Javascript can have access to all the HTML document with query, all the `document` and select specific classes
+
+### Query selector
+Returns the first element (if any) on the page matching the selector. `document.querySelector(whatIWantToSelect)`
+```js
+let li = document.querySelector("li");
+let day = document.querySelector(".day");
+let paragraph = document.querySelector("ul#list p");
+```
+
+### Query selector All
+Returns all elements (if any) on the page matching the selector.
+```js
+let lis = document.querySelectorAll("li");
+let paragraphs = document.querySelectorAll("li#special p");
+```
+
+### Creating an event listener
+The sayHi function will be executed each time the city element is clicked.
+ Click is the most common event type but you can also use click | mouseenter | mouseleave | mousedown | mouseup | mousemove | keydown | keyup.
+```js
+function sayHi() {
+  alert("hi");
+}
+
+let element = document.querySelector("#city");
+element.addEventListener("click", sayHi);
+```
