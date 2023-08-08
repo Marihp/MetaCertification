@@ -219,3 +219,22 @@ except FileNotFoundError as e:
     print(e, "The file could not be found")
 
 ```
+
+## File Handling
+- open: Reading, writing and creating files
+- close: Close the file
+```py
+# Can accept two arguments: The Name or the Location
+open(fileName, fileLocation, Mode)
+
+# This function closes the file automatically "with"
+with open('testing.txt', 'r') as file:
+
+```
+About Mode Sets:
+- r: Open and read (text format)
+- rb: Open and read (binary format)
+- r+ : Open for reading and writing
+- w: Open for writing
+- a: Adding or appending data
+  
